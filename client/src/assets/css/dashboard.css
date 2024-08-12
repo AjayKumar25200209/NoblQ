@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aside{
+    border: 0px solid red;
+    
+    min-width: 200px;
+    max-width: 250px;
+    height: 100vh;
+    background-color: #1d2226;
+    display: block;
+    
+}
+
+aside{
+    float: left;
+}
+
+.mobileaside{
+    display: none;
+   
+}
+
+
+
+.test{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 500px;
+    top: 2000px;
+}
+
+.tablist{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid red;
+    align-items: center;
+    
+    margin-top: 10px;
+}
+
+.tablist>a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    border: 0px solid red;
+    width: 100%;
+    padding: 15px 0 ;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tablist>a:hover{
+    background-color: #555556;
+
+}
+
+.edetail{
+    border: 0px solid red;
+   
+    
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    width: 50%;
+    flex-grow: 1;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.detail>h3{
+    font-size: 25px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.parent{
+    width: 100%;
+    border: 0px solid blue;
+    display: flex;
+    
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.timesheet{
+    width: 100%;
+    border: 0px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.options{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+   
+    flex-wrap: wrap;
+    border: 0px solid red;
+}
+
+.optbtn{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+   
+    min-width: 100px;
+    background-color: #00827a;
+    color: white;
+    border: 0;
+   
+    
+}
+
+.dateset{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    border: 0px solid blue;
+}
+
+.dateset>span{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: 0px solid red;
+    width: auto;
+    align-items: center;
+    font-size: 17px;
+    flex-grow: 1;
+    
+    
+}
+
+.datainput{
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+.topoptions{
+    width: 90%;
+    
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.sheet{
+    border: 1px solid rgb(0, 0, 0);
+    height: 500px;
+    width: 100%;
+    overflow: scroll;
+    background-color: #363d45;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+    color: white;
+  }
+  
+
+
+thead{
+    background-color: #262d35;
+}
+
+.newtime{
+    width: 80%;
+  
+    top: 50px;
+   
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border: 0px  solid red;
+ 
+    position: absolute;
+    background-color: #40454b;
+
+
+}
+
+.new{
+    border: 1px solid white;
+    width: 90%;
+    background-color: #40454b;
+    margin: auto;
+    
+   
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 17px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.newtimeleft{
+    border: 0px solid red;
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.newtimeright{
+    border: 0px solid red;
+    flex-grow: 1;
+    padding: 10px;
+
+}
+.newtimeleft>span{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.bottombtns{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.bottombtns>button{
+    padding: 10px;
+    font-size: 17px;
+    background-color: #00827a;
+    color: white;
+    border: 0;
+}
+
+.Headingnew{
+    position: absolute;
+    color: white;
+    background-color: #40454b;
+    top: 37px;
+    padding:0  10px;
+    left: 100px;
+}
+
+.imgg2{
+    width: 90%;
+    max-width: 400px;
+}
+
+
+
+@media only screen and (max-width: 1110px) {
+
+    .mobileaside{
+        display: block;
+        border: 0px solid red;
+        position: fixed;
+        transform: translate(-100%);
+        min-width: 200px;
+        max-width: 250px;
+        height: 100%;
+        background-color: #1d2226;
+        transition: all 0.75s ease;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    
+
+    .newtimeleft>span{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+
+    .imgg2{
+        width: 90%;
+        max-width: 400px;
+    }
+
+
+    .newtime{
+        max-width: 600px;
+        width: 90%;
+        min-width: 100px;
+        
+        top: 50px;
+        
+        padding-top: 40px;
+        padding-bottom: 30px;
+        border: 0px  solid red;
+     
+        position: absolute;
+        background-color: #40454b;
+        
+    
+    
+    }
+    .newtimeleft{
+        border: 0px solid red;
+        flex-grow: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .close{
+        position: relative;
+        border:0px solid red;
+        width: 100%;
+        gap: 0px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        right: 0;
+        
+        
+
+
+    }
+    .dateset>span{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 100px;
+        width: 250px;
+
+    }
+
+    
+    .dateset{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+        border: 0px solid blue;
+    }
+
+    .menu{
+        position: absolute;
+        right: -17%;
+        top: 5px;
+        cursor: pointer;
+        transition: all 2s ease;
+        z-index: 9;
+       
+    }
+    .nobllogo2{
+        
+       position: fixed;
+       background-color: rgb(235, 68, 68);
+       display: flex;
+       justify-content: center;
+       
+        
+    }
+
+    .timesheet{
+       margin-top: 50px;
+       
+    }
+
+    .Headingnew{
+        position: absolute;
+        color: white;
+        background-color: #40454b;
+        top: 27px;
+        padding:0  10px;
+        left: 60px;
+    }
+
+
+
+    .optbtn{
+        padding: 10px;
+        cursor: pointer;
+        font-size: 17px;
+        
+        min-width: 100px;
+        background-color: #00827a;
+        color: white;
+        border: 0;
+        flex-grow: 1;
+        
+    }
+
+    .datainput{
+        width: 100%;
+        height: 40px;
+        font-size: 17px;
+        cursor: pointer;
+        
+    }
+
+    
+
+}
